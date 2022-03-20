@@ -206,7 +206,7 @@ async def on_ready():
 )
 async def _setlogs(ctx:SlashContext, action:str, new_logchannel:str=None):
     
-    cmd_log("slash", ctx)
+    await cmd_log("slash", ctx)
 
     if permcheck(ctx, True):
         if action == "set":
